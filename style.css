@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: Poppins;
+      font-size: 18px;
+      background-color: #393f48;
+      color: #fff;
+      user-select: none;
+      flex-wrap: wrap;
+    }
+    div {
+      display: flex;
+      justify-content: center;
+      margin: 10px;
+    }
+    input[type="text"] {
+      padding: 10px;
+      height: max-content;
+      width: 500px;
+      outline: none;
+      height: 50px;
+      border-radius: 10px;
+      border: 1px solid;
+    }
+    .clearBtn {
+      padding: 10px 30px;
+    }
+    .textArea {
+      margin-top: 50px;
+    }
+    .textArea textarea {
+      min-width: 500px;
+      height: 300px;
+      resize: none;
+    }
+    textarea {
+      padding: 10px 20px;
+      color: black;
+      font-size: 20px;
+      background-color: transparent;
+      letter-spacing: 2px;
+    }
+    button {
+      border-radius: 5px;
+      background-color: transparent;
+      margin-left: 20px;
+      cursor: pointer;
+      border: 1px solid;
+      padding: 10px 20px;
+    }
+    button:hover {
+      background-color: royalblue;
+      color: white;
+      transition: 0.7s all;
+    }
+    textarea {
+      border: 2px solid #fff;
+      color: #fff;
+      border-radius: 10px;
+      width: 920px;
+    }
+    ::placeholder {
+      color: #fff;
+    }
+    header {
+      text-align: center;
+      letter-spacing: 1px;
+    }
+    @media screen and (orientation: portrait) {
+      button {
+        margin: 10px 5px;
+      }
+      .textArea textarea {
+        min-width: 300px;
+        min-height: 200px;
+      }
+      input[type="text"] {
+        width: 400px;
+      }
+    }
+    header h2 {
+      font-size: 26px;
+      padding: 10px;
+      margin-bottom: 50px;
+      letter-spacing: 0px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 500;
+    }
+    .pop-up,
+    .clear-pop-up {
+      position: absolute;
+      top: 0;
+      left: 75%;
+      top: -20%;
+      border: 1px solid;
+      padding: 10px 20px;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      background-color: white;
+      transition: 0.5s all;
+      transform: scale(0.1);
+    }
+    .pop-up span,
+    .clear-pop-up span {
+      background-color: white;
+      color: #393f48;
+      padding: 0px 10px;
+    }
+    .pop-up img,
+    .clear-pop-up img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      margin: 5px 10px;
+    }
+    .showQR {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #fff;
+      width: 160px;
+      height: 160px;
+      position: relative;
+      left: 80%;
+      top: -300px;
+      visibility: hidden;
+    }
+    .uploadFile {
+      display: flex;
+      width: max-content;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      padding: 10px;
+      left: 20px;
+      width: 130px;
+      border-radius: 5px;
+      border: 1px solid white;
+      cursor: pointer;
+    }
+    .uploadFile input {
+      text-align: center;
+      background-color: #fff;
+      color: #393f48;
+    }
+    .clear {
+      position: relative;
+      top: 50px;
+    }
+    .downloadQR {
+      position: relative;
+      top: 120px;
+      left: -5px;
+      text-wrap: nowrap;
+      padding: 5px;
+    }

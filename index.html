@@ -1,0 +1,52 @@
+<header>
+    <h2>Morsecode Generator</h2>
+  </header>
+  <div class="input">
+    <input
+      class="inputField"
+      type="text"
+      placeholder="Type to something . . . "
+      value=""
+    />
+    <button onclick="encode()">ENCODE</button>
+    <button onclick="decode()">DECODE</button>
+    <span class="uploadFile">
+      <label
+        style="cursor: pointer"
+        for="fileInput"
+        class="custom-file-upload"
+        >Upload File</label
+      >
+      <input onchange="check()" type="file" id="fileInput" accept="image/*" />
+    </span>
+  </div>
+  <div class="textArea">
+    <textarea
+      disabled
+      name=""
+      class="morseTextarea"
+      id=""
+      cols="85"
+      rows="10  "
+    ></textarea>
+  </div>
+  <div style="background-color: transparent" class="clear">
+    <button class="clearBtn" onclick="cleartext(),clearPopUp()">clear</button>
+    <button class="clearBtn" onclick="showPopUp(),copyCode()">copy</button>
+    <button onclick="playAudio(1)">Play audio</button>
+    <!-- <button onclick="stopAudios()">Stop audio</button> -->
+    <button onclick="downloadAudio()">Download</button>
+    <button onclick="getQR()">Get QR</button>
+  </div>
+  <div class="pop-up">
+    <span>Copy successfully</span>
+    <img src="green-tick.2jpg.jpg" alt="" />
+  </div>
+  <div class="clear-pop-up">
+    <span>clear successfully</span>
+    <img src="green-tick.2jpg.jpg" alt="" />
+  </div>
+  <div class="showQR">
+    <img draggable="false" src="#" alt="" />
+    <button class="downloadQR" onclick="downloadQRImg()">Download QR</button>
+  </div>
